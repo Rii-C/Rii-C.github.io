@@ -1,13 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import { Route, Routes } from 'react-router-dom';
+import Layout from './Component/Layout';
+import Home from './Component/Home';
+import About from './Component/About';
+import Contact from './Component/Contact';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h2>rishi</h2>
-      </header>
-    </div>
+    <>
+    <Routes>
+      <Route path='/' element ={<Layout/>} >
+        <Route index element ={<Home />} />
+        <Route path='about' element ={<About />} />
+        <Route path='contact' element ={<Contact/>} />
+      </Route>
+    </Routes>
+    </>
   );
 }
 

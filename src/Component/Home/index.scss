@@ -1,0 +1,94 @@
+.home-page {
+
+    .text-zone {
+        position: absolute;
+        left: 10%;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 50%;
+        max-height: 90%;
+    }
+    h1 {
+        color: #fff;
+        font-size: 53px;
+        margin: 0;
+        font-family:'Coolvetica';
+        font-weight: 500;
+
+        &::before {
+            content: "<h1>";
+            font-family: 'La Belle Aurore';
+            font-size: 18px;
+            color: #08FDD8;
+            position: absolute;
+            left: 15px;
+            margin-top: -40px;
+            opacity: 0.6;
+        }
+
+        &::after {
+            content: '</h1>';
+            font-family: 'La Belle Aurore';
+            font-size: 18px;
+            color: #08FDD8;
+            position: absolute;
+            margin-top: 18px;
+            margin-left: 20px;
+            animation: fadeIn 1s 1.7s backwards;
+            opacity: 0.6;
+        }
+        img {
+            width: 50px;
+            margin-left: 20px;
+            opacity: 1;
+            height: auto;
+            animation: rotateIn 1s linear both;
+            animation-delay: 1.4s;
+        }
+
+    }
+    h2 {
+        color: #8d8d8d;
+        font-size: 11px;
+        margin-top: 20px;
+        font-weight: 400;
+        font-family: sans-serif;
+        letter-spacing: 3px;
+        animation: fadeIn 1s 1.8s backwards ;
+    }
+
+    .flat-button {
+        font-size: 13px;
+        color: #08FDD8;
+        font-weight: 400;
+        letter-spacing: 4px;
+        font-family: sans-serif;
+        text-decoration: none;
+        padding: 10px 18px;
+        margin-top: 20px;
+        border: 1px solid #08FDD8;
+        animation: fadeIn 1s 1.8s backwards;
+        white-space: nowrap;
+        float: left;
+
+        &:hover {
+            color: #333;
+            background:  #08FDD8 ;
+        }
+    }
+
+    // .logoPic {
+    //     width: 100%;
+    //     float: left;
+    //     position: absolute;
+    //     // margin-left: 800px;
+    //     margin-top: 70px;
+    //     left: 65vw;
+    //     img {
+    //         width: 28%;
+    //         // border-radius: 5px;
+    //         // border: 5px solid black;
+    //         opacity: 10;
+    //     }
+    // }
+}
